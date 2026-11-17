@@ -1,6 +1,4 @@
-package com.edu.parqueadero;
-
-import com.edu.parqueadero.Registro;
+package parqueadero;
 
 import java.util.ArrayList;
 import java.util.HashMap;

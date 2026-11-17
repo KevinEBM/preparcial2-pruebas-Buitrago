@@ -1,4 +1,4 @@
-package com.edu.parqueadero;
+package parqueadero;
 
 import java.util.Map;
 
