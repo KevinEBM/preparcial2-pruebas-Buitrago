@@ -17,4 +17,8 @@ import org.junit.platform.suite.api.Suite;
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "parqueadero.bdd")
 public class RunCucumberTest {
 }
-/** funciones y librerias que usa el lengujae/**
+/** funciones y librerias que usa el lengujae
+ * mvn test -Dtest='**/unitarias/*Test'    # unitarias + TDD (todo lo de unitarias/)
+ * mvn test -Dtest=RunCucumberTest         # BDD (.feature + Steps)
+ */
+/**
