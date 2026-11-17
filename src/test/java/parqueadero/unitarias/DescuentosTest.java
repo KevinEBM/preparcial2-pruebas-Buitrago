@@ -36,7 +36,17 @@ class DescuentosTest {
     void rechazaNegativo() {
         assertThrows(IllegalArgumentException.class, () -> descuentos.aplicarDescuento(-1, "frecuente"));
     }
+    @Test
+    @DisplayName("Redondea hacia abajo")
+    void redondeaHaciaAbajo() {
+        assertEquals(1799, descuentos.aplicarDescuento(1999, "frecuente"));
+    }
 
+    @Test
+    @DisplayName("Valor cero da cero")
+    void valorCero() {
+        assertEquals(0, descuentos.aplicarDescuento(0, "convenio"));
+    }
     @Test
     @DisplayName("Rechaza un tipo de cliente que no existe")
     void rechazaTipoInvalido() {
